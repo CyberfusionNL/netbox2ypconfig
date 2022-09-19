@@ -1,0 +1,12 @@
+include:
+  - project: 'cyberfusion/gitlab-ci-includes'
+    ref: main
+    file:
+      - '/base.yml'
+      - '/pypi-packages.yml'
+      - '/python.yml'
+
+stages:
+  - test
+  - build
+  - publish
